@@ -57,6 +57,13 @@ const InfoData = () => {
     setShow(true)
   }
 
+  const deleteItem = (val) => {
+    // const filtered = userData.filter((item,id)=>{
+    //   return item.id != item.val;
+    // })
+    // setUserData(filtered)
+  }
+
   useEffect(() => {
     const storedTodos = localStorage.getItem("userData");
     if (storedTodos) {
@@ -114,7 +121,8 @@ const InfoData = () => {
         <Offcanvas.Body>
           {list ? (
             <>
-            <ShowData data={userData}/>
+            <ShowData data={userData} del={deleteItem}/>
+            {console.log(userData,'userdata')}
             </>
           ) : (
             <div className="sidebar">

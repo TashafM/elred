@@ -12,7 +12,6 @@ const OtherCards = () => {
   return (
     <>
       {cardData.map((item) => {
-        console.log(item)
         return (
           <>
             <Col md={4} className="others-div">

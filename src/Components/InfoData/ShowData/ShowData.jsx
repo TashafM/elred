@@ -13,7 +13,7 @@ const ShowData = (props) => {
 
   return (
     <>
-      {dataS.map((item) => {
+      {dataS.map((item,id) => {
         return (
           <div className="showdata">
             <div className="show-title-sec">
@@ -26,7 +26,7 @@ const ShowData = (props) => {
                 </span>
               </div>
               <div>
-                <BsFillPencilFill />
+                <BsFillPencilFill onClick={()=>props.del(id)}/>
               </div>
             </div>
             <div className="sales-mail">
