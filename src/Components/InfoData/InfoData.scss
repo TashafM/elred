@@ -1,0 +1,143 @@
+.infodata-main {
+  padding-top: 1%;
+  .data-card {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 200px;
+    .title-sec {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5%;
+
+      .txt {
+        font-size: 23px;
+      }
+
+      .contact-icn {
+        margin-right: 8px;
+        font-size: 26px;
+      }
+
+      .edit-pencil{
+        cursor: pointer;
+        color: #be2028;
+      }
+    }
+
+    .sales-mail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .first {
+        display: flex;
+        align-items: flex-end;
+        .msg-icn {
+          margin-right: 10px;
+          font-size: 22px;
+        }
+
+        .mail-txt {
+          font-size: 16px;
+          width: 85%;
+        }
+      }
+
+      .contact-count {
+        background: #be2028;
+        max-width: 30px;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        color: white;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+
+    .contact-number {
+      display: flex;
+      align-items: flex-end;
+      margin-top: 3%;
+      .phn-icn {
+        margin-right: 10px;
+        font-size: 22px;
+      }
+
+      .num-txt {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-between;
+
+    .field-lable {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      border: none;
+      background: #f7f7f7;
+      outline: none;
+      padding: 7px;
+      border-radius: 7px;
+      margin-bottom: 10px;
+    }
+
+    .email-add-btn {
+      button {
+        width: 100%;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff2f2;
+        margin-bottom: 20px;
+      }
+    }
+
+    .number-add-btn {
+      button {
+        width: 100%;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff2f2;
+      }
+    }
+  }
+
+  .save-btn {
+    background: #be2028;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.others-div{
+  padding-top: 1%;
+}
+

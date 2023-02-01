@@ -1,0 +1,25 @@
+.navcontent {
+    height: 90vh;
+
+    .menus {
+        .sub-menu {
+            height: 100%;
+            background-color: white;
+            margin: 20px 0px;
+            margin-left: 5px;
+            padding: 10px;
+            border-radius: 7px;
+        }
+    }
+
+    .content {
+        .main-content {
+            height: 100%;
+            background-color: white;
+            margin: 20px 5px;
+            padding: 10px;
+            border-radius: 7px;
+
+        }
+    }
+}
