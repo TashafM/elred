@@ -8,18 +8,19 @@
     }
 
     .menu-list {
-        padding-top: 10px;
+        padding: 20px 10px;
 
         ul {
             padding: 0;
             list-style-type: none;
 
             .li {
-                margin: 10px 0px;
+                margin: 12px 0px;
                 padding: 10px 15px;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
+                color: #c3c3c3;
 
                 .svg-inline--fa {
                     font-size: 20px;
@@ -33,6 +34,8 @@
 
                 .menu-name {
                     margin-left: 10px;
+                    font-size: 13px;
+                    font-weight: bold;
                 }
             }
 

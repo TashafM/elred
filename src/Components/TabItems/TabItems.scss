@@ -25,3 +25,58 @@
     border-top: 2px solid;
   }
 }
+
+
+.no-data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+
+  span {
+    padding: 20px;
+    /* background: red; */
+    border: 2px solid #c3c3c3;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .tab-div {
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 15px;
+
+    .tab-name {
+      font-size: 12px;
+      text-align: center;
+      margin-left: 3%;
+    }
+  }
+
+  .tabitems-main {
+    hr {
+      margin: -0.03%;
+    }
+  }
+
+  .no-data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+
+    span {
+      padding: 20px;
+      /* background: red; */
+      border: 2px solid #c3c3c3;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}

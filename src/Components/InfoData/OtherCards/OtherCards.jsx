@@ -34,7 +34,7 @@ const OtherCards = () => {
                         return (
                             <div className="icn-dynamic">
                                 <FontAwesomeIcon icon={item.img} className="icn" />
-                                <div>{item.text}</div>
+                                <div className="name-txt">{item.text}</div>
                             </div>
                         )
                     })}

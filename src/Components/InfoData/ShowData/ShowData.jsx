@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BsFillPencilFill, BsFillTelephoneFill } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
-import { MdPermContactCalendar } from "react-icons/md";
+import { MdPermContactCalendar, MdDeleteForever } from "react-icons/md";
 import "./ShowData.scss";
 
 const ShowData = (props) => {
@@ -13,20 +13,19 @@ const ShowData = (props) => {
 
   return (
     <>
-      {dataS.map((item,id) => {
+      {dataS.map((item, id) => {
         return (
           <div className="showdata">
             <div className="show-title-sec">
-              <div>
+              <div className="title-sec">
                 <span className="contact-icn">
                   <MdPermContactCalendar />
                 </span>
-                <span className="txt">
-                {item.title}
-                </span>
+                <span className="txt">{item.title}</span>
               </div>
-              <div>
-                <BsFillPencilFill onClick={()=>props.del(id)}/>
+              <div className="iconsss">
+                <span className="deleteIcon"><MdDeleteForever onClick={() => props.del(id)} /></span>
+                <BsFillPencilFill />
               </div>
             </div>
             <div className="sales-mail">
@@ -35,7 +34,9 @@ const ShowData = (props) => {
                   <HiMail />
                 </span>
                 <span className="mail-txt">
-                  {item.email2 != '' ? `${item.email} / ${item.email2}` : item.email}
+                  {item.email2 != ""
+                    ? `${item.email} / ${item.email2}`
+                    : item.email}
                 </span>
               </div>
             </div>
@@ -44,7 +45,9 @@ const ShowData = (props) => {
                 <BsFillTelephoneFill />
               </span>
               <span className="num-txt">
-              {item.contact2 != '' ? `${item.contact} / ${item.contact2}` : item.contact}
+                {item.contact2 != ""
+                  ? `${item.contact} / ${item.contact2}`
+                  : item.contact}
               </span>
             </div>
           </div>

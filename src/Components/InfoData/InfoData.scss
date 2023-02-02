@@ -1,10 +1,10 @@
 .infodata-main {
   padding-top: 1%;
   .data-card {
-    border: 1px solid black;
+    border: 1px solid #c3c3c3;
     border-radius: 10px;
     padding: 20px;
-    min-height: 175px;
+    min-height: 200px;
     .title-sec {
       display: flex;
       justify-content: space-between;
@@ -13,6 +13,7 @@
 
       .txt {
         font-size: 23px;
+        font-weight: 500;
       }
 
       .contact-icn {
@@ -20,7 +21,7 @@
         font-size: 26px;
       }
 
-      .edit-pencil{
+      .edit-pencil {
         cursor: pointer;
         color: #be2028;
       }
@@ -137,7 +138,28 @@
   }
 }
 
-.others-div{
+.others-div {
   padding-top: 1%;
 }
 
+.title-head {
+  font-size: 15px;
+  font-weight: normal;
+  color: #c3c3c3;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 596px){
+  .row-infodata{
+    padding-top: 10px;
+  }
+  .data-card{
+    margin: 10px;
+  }
+  .title-sec{
+    .txt{
+      font-size: 18px;
+    }
+  }
+}

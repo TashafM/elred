@@ -1,8 +1,8 @@
 .data-card {
-  border: 1px solid black;
+  border: 1px solid #C3C3C3;
   border-radius: 10px;
   padding: 20px;
-  min-height: 175px;
+  min-height: 200px;
   .title-sec {
     display: flex;
     justify-content: space-between;
@@ -11,11 +11,13 @@
 
     .txt {
       font-size: 23px;
+      font-weight: 500;
     }
 
     .contact-icn {
       margin-right: 8px;
       font-size: 20px;
+      color: #C3C3C3;
     }
 
    .edit-pencil{
@@ -76,9 +78,15 @@
 
   .icn-dynamic{
     text-align: center;
+    font-size: 14px;
 
     .icn{
         font-size: 22px;
+        color: #C3C3C3;
+    }
+
+    .name-txt{
+      margin-top: 5px;
     }
   }
 }
@@ -86,4 +94,12 @@
 
 .desc{
     font-size: 16px;
+}
+
+@media only screen and (max-width: 596px){
+  .title-sec{
+    .txt{
+      font-size: 18px;
+    }
+  }
 }

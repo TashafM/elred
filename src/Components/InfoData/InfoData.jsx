@@ -76,7 +76,7 @@ const InfoData = () => {
   // }, [userData]);
 
   return (
-    <Row>
+    <Row className="row-infodata">
     <Col md={4} className="infodata-main">
       <div className="data-card">
         <div className="title-sec">
@@ -115,14 +115,13 @@ const InfoData = () => {
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
             <h2>Contact</h2>
-            <div>Please provide the companies email and contacts</div>
+            <div className="title-head">Please provide the company's email and contacts</div>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           {list ? (
             <>
             <ShowData data={userData} del={deleteItem}/>
-            {console.log(userData,'userdata')}
             </>
           ) : (
             <div className="sidebar">

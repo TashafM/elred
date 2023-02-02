@@ -20,7 +20,7 @@ const Menus = () => {
       <div className="menu-img">
         <img src={logo} alt="" />
       </div>
-
+      <div className="left-menu">
       <div className="menu-list">
         <ul>
           {menuItems.map((item) => {
@@ -38,8 +38,7 @@ const Menus = () => {
           })}
         </ul>
       </div>
-      <div>
-        <NeedHelp />
+      <NeedHelp />
       </div>
     </div>
   );

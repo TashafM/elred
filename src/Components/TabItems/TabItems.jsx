@@ -28,8 +28,8 @@ const TabItems = () => {
       </div>
       <hr />
 
-      <div>
-        {tabId == 1 ? <InfoData/> : <div>No data found </div>}
+      <div >
+        {tabId == 1 ? <InfoData/> : <div className="no-data"><span>No data available</span> </div>}
       </div>
       
     </div>
