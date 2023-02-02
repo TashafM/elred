@@ -51,6 +51,7 @@ const InfoData = () => {
       contact: "",
       contact2: "",
     });
+    setShow(false);
   };
 
   const openList = () => {
