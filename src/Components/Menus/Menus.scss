@@ -1,4 +1,5 @@
 .menus-col {
+    max-height: 100vh;
     .menu-img {
         img {
             max-width: 120px;
@@ -15,7 +16,7 @@
 
             .li {
                 margin: 10px 0px;
-                padding: 15px;
+                padding: 10px 15px;
                 cursor: pointer;
                 display: flex;
                 align-items: center;

@@ -1,9 +1,9 @@
 .navcontent {
-    height: 90vh;
+    min-height: 90vh;
 
     .menus {
         .sub-menu {
-            height: 100%;
+            height: 95%;
             background-color: white;
             margin: 20px 0px;
             margin-left: 5px;
@@ -14,7 +14,7 @@
 
     .content {
         .main-content {
-            height: 100%;
+            height: 95%;
             background-color: white;
             margin: 20px 5px;
             padding: 10px;
@@ -23,3 +23,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 996px) {
+    /* Styles for small devices (mobile phones) */
+    .menus{
+        display: none;
+    }
+  }

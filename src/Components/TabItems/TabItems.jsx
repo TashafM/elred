@@ -15,6 +15,7 @@ const TabItems = () => {
 
   return (
     <div className="tabitems-main">
+      <div className="tab-div">
       {tabs.map((item) => {
         return (
           <>
@@ -24,11 +25,13 @@ const TabItems = () => {
           </>
         );
       })}
+      </div>
       <hr />
 
       <div>
         {tabId == 1 ? <InfoData/> : <div>No data found </div>}
       </div>
+      
     </div>
   );
 };

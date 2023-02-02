@@ -7,12 +7,13 @@
 }
 
 .company-info {
+    margin-top: -2%;
     display: flex;
     align-items: center;
 
     .company-logo {
         img {
-            max-width: 280px;
+            max-width: 230px;
             width: 100%;
         }
     }
@@ -31,10 +32,34 @@
     .lorem{
         width: 70%;
         padding-left: 2%;
-        font-size: 18px;
+        font-size: 16px;
     }
     .icon-edit{
         color: #BE2028;
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 596px){
+    .route-text{
+        text-align: center;
+    }
+    .company-info{
+        justify-content: center;
+
+        .company-logo{
+            img{
+                width: 155px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .dummy-txt{
+        padding: 3%;
+        .lorem{
+            width: 100%;
+            font-size: 15px;
+        }
     }
 }
