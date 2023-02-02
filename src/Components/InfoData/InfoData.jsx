@@ -59,10 +59,11 @@ const InfoData = () => {
   }
 
   const deleteItem = (val) => {
-    // const filtered = userData.filter((item,id)=>{
-    //   return item.id != item.val;
-    // })
-    // setUserData(filtered)
+    const a = userData.filter((item,id)=>{
+      return id !== val;
+    })
+    setShow(false);
+    localStorage.setItem('userData', JSON.stringify(a))
   }
 
   useEffect(() => {
@@ -70,7 +71,7 @@ const InfoData = () => {
     if (storedTodos) {
       setUserData(JSON.parse(storedTodos));
     }
-  }, []);
+  }, [userData]);
 
   // useEffect(() => {
   //   localStorage.setItem("userData", JSON.stringify(userData));
