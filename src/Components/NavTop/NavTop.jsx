@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import pro from "../../assets/images/pro.jpg";
+import Menus from '../Menus/Menus'
 import "./NavTop.scss";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Offcanvas, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
@@ -15,6 +16,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const NavTop = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const openMenu = () => {
+    console.log("menu open");
+  };
   return (
     <>
       <Row className="navigation-row">
@@ -42,7 +51,7 @@ const NavTop = () => {
       <Row className="mobile-navigation">
         <Col xs={3}>
           <div className="nav-menu">
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faBars} onClick={handleShow} />
           </div>
         </Col>
         <Col xs={6}>
@@ -53,8 +62,8 @@ const NavTop = () => {
         <Col xs={3}>
           <OverlayTrigger
             trigger="click"
-            key='bottom'
-            placement='bottom'
+            key="bottom"
+            placement="bottom"
             overlay={
               <Popover id={`popover-positioned-bottom`}>
                 <Popover.Header as="h3">{`Profile Section`}</Popover.Header>
@@ -70,6 +79,12 @@ const NavTop = () => {
             </div>
           </OverlayTrigger>
         </Col>
+
+        <Offcanvas show={show} onHide={handleClose} >
+          <Offcanvas.Body>
+            <Menus/>
+          </Offcanvas.Body>
+        </Offcanvas>
       </Row>
     </>
   );
