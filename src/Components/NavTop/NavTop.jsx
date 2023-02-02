@@ -23,6 +23,10 @@ const NavTop = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const closeFunc = (value) => {
+    setShow(value)
+  }
+
   const openMenu = () => {
     console.log("menu open");
   };
@@ -82,9 +86,9 @@ const NavTop = () => {
           </OverlayTrigger>
         </Col>
 
-        <Offcanvas show={show} onHide={handleClose} >
-          <Offcanvas.Body>
-            <Menus/>
+        <Offcanvas show={show} onHide={handleClose} className="mobile-nav-menu">
+          <Offcanvas.Body >
+            <Menus closeFunc={closeFunc}/>
           </Offcanvas.Body>
         </Offcanvas>
       </Row>

@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NeedHelp from "../NeedHelp/NeedHelp";
 import { useNavigate } from "react-router-dom";
 
-const Menus = () => {
+const Menus = (props) => {
   const navigate = useNavigate();
   const [data, setData] = useState(1);
 
@@ -26,7 +26,7 @@ const Menus = () => {
         <ul>
           {menuItems.map((item) => {
             return (
-              <>
+              <div onClick={()=>props.closeFunc(false)}>
                 <div
                   className={`li ${data == item.id ? "active" : ""}`}
                   onClick={() => goto(item)}
@@ -34,7 +34,7 @@ const Menus = () => {
                   <FontAwesomeIcon icon={item.icon} className="icn" />
                   <span className="menu-name">{item.title}</span>
                 </div>
-              </>
+              </div>
             );
           })}
         </ul>
