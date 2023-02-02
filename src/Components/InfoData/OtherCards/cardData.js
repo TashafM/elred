@@ -1,4 +1,4 @@
-import { faTableColumns,faGlobe, faMap, faClock, faLink, faQuoteLeft,} from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faMap, faClock, faLink, faQuoteLeft,} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const cardData = [
