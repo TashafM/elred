@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import pro from "../../assets/images/pro.jpg";
