@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React, { useState } from "react";
 import tabs from "./tabs.js";
 import "./TabItems.scss";

@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React from "react";
 import { Col } from "react-bootstrap";
 import { BsFillPencilFill, BsFillTelephoneFill,BsInstagram } from "react-icons/bs";

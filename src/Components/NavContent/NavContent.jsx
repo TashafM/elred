@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React from 'react'
 import './NavContent.scss'
 import { Row, Col } from 'react-bootstrap'

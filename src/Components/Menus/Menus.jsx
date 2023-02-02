@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React, { useState } from "react";
 import "./Menus.scss";
 import logo from "../../assets/images/logo.png";

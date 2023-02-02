@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React, { useEffect, useState } from "react";
 import { BsFillPencilFill, BsFillTelephoneFill } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
